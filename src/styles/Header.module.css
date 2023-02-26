@@ -1,0 +1,15 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    background: var(--gray-700);
+    height: 12rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 3rem;
+}

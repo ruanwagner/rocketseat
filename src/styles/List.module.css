@@ -1,0 +1,102 @@
+section {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 55%;
+    margin: auto auto;
+}
+.form {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    width: 100%;
+    top: -1.8rem;
+}
+.form div {
+    height: 100%;
+    display: flex;
+}
+.input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    background: var(--gray-500);
+    color: var(--gray-300);
+    border-radius: .5rem;
+}
+form button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    font-weight: bold;
+    margin-left: .5rem;
+    border-radius: .6rem;
+    gap: .6rem;
+}
+input:hover {
+    background: var(--gray-400);
+}
+input:focus {
+    color: var(--gray-100);
+}
+form button:hover {
+    background: var(--blue);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+main header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .9rem;
+}
+header div {
+    font-weight: bold;
+}
+label {
+    font-weight: bold;
+    margin-right: 0.4rem;
+}
+.createdTasks {
+    color: var(--blue);
+}
+.completedTasks {
+    color: var(--purple);
+}
+span {
+    background: var(--gray-400);
+    color: var(--gray-200);
+    border-radius: 1rem;
+    font-size: .8rem;
+    padding: .3rem .7rem;
+}
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.empty {
+    color: var(--gray-300);
+    text-align: center;
+    padding: 1rem;
+}
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+    }
+}
+@media (min-width: 769px) and (max-width: 910px) {
+    section {
+        width: 80%;
+    }
+}
